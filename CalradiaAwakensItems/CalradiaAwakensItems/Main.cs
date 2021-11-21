@@ -34,11 +34,11 @@ namespace CalradiaAwakensItems
             }
         }
 
-        public override void OnMissionBehaviourInitialize(Mission mission)
+        public override void OnMissionBehaviorInitialize(Mission mission)
         {
             try
             {
-                base.OnMissionBehaviourInitialize(mission);
+                base.OnMissionBehaviorInitialize(mission);
                 AddMissionBehaviors(mission);
             }
             catch (Exception ex)
@@ -50,7 +50,7 @@ namespace CalradiaAwakensItems
         private void AddMissionBehaviors(Mission mission)
         {
             // Loading brand new logic on each mission start instead of reusing previous states.
-            mission.AddMissionBehaviour(new MyEquipmentMissionLogic());
+            mission.AddMissionBehavior(new MyEquipmentMissionLogic());
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)

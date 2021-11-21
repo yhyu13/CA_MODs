@@ -173,9 +173,9 @@ namespace CalradiaAwakensItems
                             var dest = position + direction;
                             Mat3 _orientation = MyApplicationInterface.LookAtWorld(in dest, in position);
                             Mission.Current.AddCustomMissile(shooterAgent, _ammoWeapon2, position, direction, _orientation, missileSpeed, speed, hasRigidBody, missile.MissionObjectToIgnore, forcedMissileIndex);
-                            foreach (MissionBehaviour missionBehaviour in Mission.Current.MissionBehaviours)
+                            foreach (MissionBehavior missionBehavior in Mission.Current.MissionBehaviors)
                             {
-                                missionBehaviour.OnAgentShootMissile(shooterAgent, weaponIndex, position, direction, orientation, hasRigidBody, forcedMissileIndex);
+                                missionBehavior.OnAgentShootMissile(shooterAgent, weaponIndex, position, direction, orientation, hasRigidBody, forcedMissileIndex);
                             }
                         }
                         _once = false;
