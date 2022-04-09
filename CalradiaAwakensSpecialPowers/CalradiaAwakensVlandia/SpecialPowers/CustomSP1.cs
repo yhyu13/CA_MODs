@@ -54,7 +54,7 @@ namespace CalradiaAwakensSpecialPowers.SpecialPowers
             {
                 foreach (var index in setttings.ParticleBoneIndexes.Split(','))
                 {
-                    _particleBoneIndexes.Add(int.Parse(index));
+                    _particleBoneIndexes.Add(sbyte.Parse(index));
                 }
             }
 
@@ -65,7 +65,7 @@ namespace CalradiaAwakensSpecialPowers.SpecialPowers
             }
             if (setttings.LightBone != null)
             {
-                _lightBone = int.Parse(setttings.LightBone);
+                _lightBone = sbyte.Parse(setttings.LightBone);
             }
             if (setttings.LightRadius != null)
             {

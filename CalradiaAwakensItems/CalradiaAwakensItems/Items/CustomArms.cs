@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using CalradiaAwakensItems.Utils;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.Conversation;
 using TaleWorlds.Core;
 using TaleWorlds.Localization;
 

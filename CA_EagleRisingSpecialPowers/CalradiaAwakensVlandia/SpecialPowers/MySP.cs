@@ -31,11 +31,11 @@ namespace CA_EagleRisingSpecialPowers.SpecialPowers
             _particleEffectName = setttings.ParticleEffectName;
             foreach (var index in setttings.ParticleBoneIndexes.Split(','))
             {
-                _particleBoneIndexes.Add(int.Parse(index));
+                _particleBoneIndexes.Add(sbyte.Parse(index));
             }
 
             _hasLight = bool.Parse(setttings.HasLight);
-            _lightBone = int.Parse(setttings.LightBone);
+            _lightBone = sbyte.Parse(setttings.LightBone);
             _lightRadius = float.Parse(setttings.LightRadius);
             _lightIntensity = float.Parse(setttings.LightIntensity);
             _lightColor = Color.ConvertStringToColor(setttings.LightColor).ToVec3();
@@ -318,10 +318,10 @@ namespace CA_EagleRisingSpecialPowers.SpecialPowers
         protected bool _shouldRepeatParticle = false;
         protected float _repeatParticlePeriod = 1f;
         protected string _particleEffectName = null;
-        protected List<int> _particleBoneIndexes = new List<int>();
+        protected List<sbyte> _particleBoneIndexes = new List<sbyte>();
 
         protected bool _hasLight = false;
-        protected int _lightBone = 0;
+        protected sbyte _lightBone = 0;
         protected float _lightRadius = 10f;
         protected float _lightIntensity = 125f;
         protected Vec3 _lightColor = Color.White.ToVec3();
