@@ -364,7 +364,7 @@ namespace CalradiaAwakensSpecialPowers.SpecialPowers
                     if (isTimered && buffed && closestAgent != null)
                     {
                         Blow blow = CreateBlow(closestAgent, target);
-                        target.RegisterBlow(blow);
+                        target.RegisterBlow(blow, new AttackCollisionData());
                     }
                 }
                 else

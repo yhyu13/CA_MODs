@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\Game\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\CalradiaAwakensItems\bin\Win64_Shipping_Client\</OutputPath>
+    <OutputPath>..\..\..\..\Game\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\CA_EagleRising\bin\Win64_Shipping_Client\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>3</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\..\Game\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\CalradiaAwakensItems\bin\Win64_Shipping_Client\</OutputPath>
+    <OutputPath>..\..\..\..\Game\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\CA_EagleRising\bin\Win64_Shipping_Client\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>3</WarningLevel>

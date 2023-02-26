@@ -147,10 +147,10 @@ namespace CalradiaAwakensSpecialPowers
             }
         }
 
-        // Hang Yu Oct4.2020 : e.1.5.3 changed
-        public override void OnAgentHit(Agent affectedAgent, Agent affectorAgent, int damage, in MissionWeapon affectorWeapon)
+        // Hang Yu Feb.25.2023 : v.1.0.3 changed
+        public override void OnAgentHit(Agent affectedAgent, Agent affectorAgent, in MissionWeapon affectorWeapon, in Blow blow, in AttackCollisionData attackCollisionData)
         {
-            base.OnAgentHit(affectedAgent, affectorAgent, damage, affectorWeapon);
+            base.OnAgentHit(affectedAgent, affectorAgent, affectorWeapon, blow, attackCollisionData);
 
             string[] offsenAura = { "OffenseAura3", "OffenseAura2", "OffenseAura1" };
             foreach (var name in offsenAura)
